@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048717E4665151541D4BFCEC /* Pods_IlegraChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */; };
+		9089094110633E98BD21749B /* Pods_IlegraChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211B93933961D37D7DF200C2 /* Pods_IlegraChallengeTests.framework */; };
 		B10F3DA42127749F00EF67BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DA32127749F00EF67BA /* AppDelegate.swift */; };
 		B10F3DA62127749F00EF67BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DA52127749F00EF67BA /* ViewController.swift */; };
 		B10F3DA92127749F00EF67BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DA72127749F00EF67BA /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */; };
 		B10F3DB9212774A100EF67BA /* IlegraChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DB8212774A100EF67BA /* IlegraChallengeTests.swift */; };
 		B10F3DC4212774A100EF67BA /* IlegraChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */; };
+		D10D55BE4510B48B32FACB15 /* Pods_IlegraChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06F10A4AAA30442DB44D7F5B /* Pods-IlegraChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallengeTests/Pods-IlegraChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BDEB1DB75570E5CDF880043 /* Pods-IlegraChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallengeTests/Pods-IlegraChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		211B93933961D37D7DF200C2 /* Pods_IlegraChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D57064AAE195C2C4CE45993 /* Pods-IlegraChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		69C0EF59C1F4656B6BD53CB1 /* Pods-IlegraChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallengeUITests/Pods-IlegraChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C4AC83CF7969A3A82A0EEC5 /* Pods-IlegraChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallengeUITests/Pods-IlegraChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B10F3DA02127749F00EF67BA /* IlegraChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IlegraChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F3DA32127749F00EF67BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B10F3DA52127749F00EF67BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		B10F3DBF212774A100EF67BA /* IlegraChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlegraChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraChallengeUITests.swift; sourceTree = "<group>"; };
 		B10F3DC5212774A100EF67BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10D55BE4510B48B32FACB15 /* Pods_IlegraChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9089094110633E98BD21749B /* Pods_IlegraChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048717E4665151541D4BFCEC /* Pods_IlegraChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D9FBFC22420CE76967D0FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */,
+				5D57064AAE195C2C4CE45993 /* Pods-IlegraChallenge.release.xcconfig */,
+				06F10A4AAA30442DB44D7F5B /* Pods-IlegraChallengeTests.debug.xcconfig */,
+				0BDEB1DB75570E5CDF880043 /* Pods-IlegraChallengeTests.release.xcconfig */,
+				69C0EF59C1F4656B6BD53CB1 /* Pods-IlegraChallengeUITests.debug.xcconfig */,
+				8C4AC83CF7969A3A82A0EEC5 /* Pods-IlegraChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B10F3D972127749F00EF67BA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				B10F3DB7212774A100EF67BA /* IlegraChallengeTests */,
 				B10F3DC2212774A100EF67BA /* IlegraChallengeUITests */,
 				B10F3DA12127749F00EF67BA /* Products */,
+				00D9FBFC22420CE76967D0FE /* Pods */,
+				D550C843742DF7AC6E0DC064 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = IlegraChallengeUITests;
 			sourceTree = "<group>";
 		};
+		D550C843742DF7AC6E0DC064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */,
+				211B93933961D37D7DF200C2 /* Pods_IlegraChallengeTests.framework */,
+				B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B10F3DC8212774A100EF67BA /* Build configuration list for PBXNativeTarget "IlegraChallenge" */;
 			buildPhases = (
+				4D544545D62A75C1F4C72D2B /* [CP] Check Pods Manifest.lock */,
 				B10F3D9C2127749F00EF67BA /* Sources */,
 				B10F3D9D2127749F00EF67BA /* Frameworks */,
 				B10F3D9E2127749F00EF67BA /* Resources */,
+				402C467FC0E6FAB8FD17E601 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B10F3DCB212774A100EF67BA /* Build configuration list for PBXNativeTarget "IlegraChallengeTests" */;
 			buildPhases = (
+				999E248BA6EAFE8617B643D6 /* [CP] Check Pods Manifest.lock */,
 				B10F3DB0212774A100EF67BA /* Sources */,
 				B10F3DB1212774A100EF67BA /* Frameworks */,
 				B10F3DB2212774A100EF67BA /* Resources */,
+				38D4DCF8D7212804FB95FD98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B10F3DCE212774A100EF67BA /* Build configuration list for PBXNativeTarget "IlegraChallengeUITests" */;
 			buildPhases = (
+				9F81D341710E01B3E9733558 /* [CP] Check Pods Manifest.lock */,
 				B10F3DBB212774A100EF67BA /* Sources */,
 				B10F3DBC212774A100EF67BA /* Frameworks */,
 				B10F3DBD212774A100EF67BA /* Resources */,
@@ -250,6 +295,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D4DCF8D7212804FB95FD98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallengeTests/Pods-IlegraChallengeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallengeTests/Pods-IlegraChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		402C467FC0E6FAB8FD17E601 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D544545D62A75C1F4C72D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlegraChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		999E248BA6EAFE8617B643D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlegraChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F81D341710E01B3E9733558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlegraChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B10F3D9C2127749F00EF67BA /* Sources */ = {
@@ -428,6 +576,7 @@
 		};
 		B10F3DC9212774A100EF67BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +595,7 @@
 		};
 		B10F3DCA212774A100EF67BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D57064AAE195C2C4CE45993 /* Pods-IlegraChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +614,7 @@
 		};
 		B10F3DCC212774A100EF67BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F10A4AAA30442DB44D7F5B /* Pods-IlegraChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +636,7 @@
 		};
 		B10F3DCD212774A100EF67BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDEB1DB75570E5CDF880043 /* Pods-IlegraChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +658,7 @@
 		};
 		B10F3DCF212774A100EF67BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C0EF59C1F4656B6BD53CB1 /* Pods-IlegraChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +679,7 @@
 		};
 		B10F3DD0212774A100EF67BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4AC83CF7969A3A82A0EEC5 /* Pods-IlegraChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
