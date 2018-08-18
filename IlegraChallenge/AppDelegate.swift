@@ -6,16 +6,30 @@
 //  Copyright © 2018 gabi. All rights reserved.
 //
 
+import RxSwift
 import UIKit
-
+// swiftlint:disable all
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
+    
+    private var appCoordinator: AppCoordinator!
+    private let disposeBag = DisposeBag()
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        guard let window = window else {
+            fatalError("Should not happen, window is initialized")
+        }
+        
+        appCoordinator = AppCoordinator(window: window)
+        appCoordinator.start()
+            .subscribe()
+            .disposed(by: disposeBag)
+        
         return true
     }
 

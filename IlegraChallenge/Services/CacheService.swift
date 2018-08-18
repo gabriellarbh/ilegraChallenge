@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class CacheService {
+    private let apiService = MarvelAPIService()
+    
+    // Inputs
+    
+    // Outputs
+    
+    init() {
+        
+    }
+}
