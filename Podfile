@@ -8,6 +8,7 @@ target 'IlegraChallenge' do
     pod 'RxCocoa'
     pod 'Alamofire'
     pod 'RxDataSources'
+    pod 'SwiftHash'
 
   # Pods for IlegraChallenge
   target 'IlegraChallengeTests' do

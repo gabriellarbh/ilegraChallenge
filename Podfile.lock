@@ -10,6 +10,7 @@ PODS:
   - RxSwift (4.2.0)
   - RxTest (4.2.0):
     - RxSwift (~> 4.0)
+  - SwiftHash (2.0.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - RxDataSources
   - RxSwift
   - RxTest
+  - SwiftHash
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -26,6 +28,7 @@ SPEC REPOS:
     - RxDataSources
     - RxSwift
     - RxTest
+    - SwiftHash
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -34,7 +37,8 @@ SPEC CHECKSUMS:
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
+  SwiftHash: c805de5a434eacfa0dac7210745a50c55d7fe33d
 
-PODFILE CHECKSUM: 635d5cb5c7f48f384465e727bd9c4457098e1c50
+PODFILE CHECKSUM: ec9cabf7043e415267c0137ce7b75578ca362ff1
 
 COCOAPODS: 1.5.3
