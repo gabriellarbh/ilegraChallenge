@@ -30,6 +30,8 @@
 		B1DC9409212867E000348BE9 /* CharactersDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9408212867E000348BE9 /* CharactersDetailsViewModel.swift */; };
 		B1DC940B212867EB00348BE9 /* ComicDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940A212867EB00348BE9 /* ComicDetailsViewModel.swift */; };
 		B1DC940D2128692D00348BE9 /* MarvelAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */; };
+		B1DC941021286B1200348BE9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940F21286B1200348BE9 /* Image.swift */; };
+		B1DC941221286CC700348BE9 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC941121286CC700348BE9 /* CacheService.swift */; };
 		D10D55BE4510B48B32FACB15 /* Pods_IlegraChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		B1DC9408212867E000348BE9 /* CharactersDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewModel.swift; sourceTree = "<group>"; };
 		B1DC940A212867EB00348BE9 /* ComicDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailsViewModel.swift; sourceTree = "<group>"; };
 		B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIService.swift; sourceTree = "<group>"; };
+		B1DC940F21286B1200348BE9 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B1DC941121286CC700348BE9 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */,
+				B1DC941121286CC700348BE9 /* CacheService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			children = (
 				B1DC9402212867A000348BE9 /* Character.swift */,
 				B1DC9404212867AC00348BE9 /* Comic.swift */,
+				B1DC940F21286B1200348BE9 /* Image.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 				B10F3D9D2127749F00EF67BA /* Frameworks */,
 				B10F3D9E2127749F00EF67BA /* Resources */,
 				402C467FC0E6FAB8FD17E601 /* [CP] Embed Pods Frameworks */,
+				B1DC940E2128697D00348BE9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -482,6 +489,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B1DC940E2128697D00348BE9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -493,9 +513,11 @@
 				B1DC93E821283EBF00348BE9 /* AppCoordinator.swift in Sources */,
 				B1DC9409212867E000348BE9 /* CharactersDetailsViewModel.swift in Sources */,
 				B1DC93EA2128406700348BE9 /* BaseCoordinator.swift in Sources */,
+				B1DC941221286CC700348BE9 /* CacheService.swift in Sources */,
 				B1DC93FD2128504E00348BE9 /* CharacterDetailsView.swift in Sources */,
 				B1DC9407212867D400348BE9 /* CharactersViewModel.swift in Sources */,
 				B1DC93F72128500B00348BE9 /* ComicCell.swift in Sources */,
+				B1DC941021286B1200348BE9 /* Image.swift in Sources */,
 				B1DC940B212867EB00348BE9 /* ComicDetailsViewModel.swift in Sources */,
 				B1DC940D2128692D00348BE9 /* MarvelAPIService.swift in Sources */,
 				B1DC93EE21284F3E00348BE9 /* CharactersView.swift in Sources */,
