@@ -29,6 +29,7 @@
 		B1DC9407212867D400348BE9 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9406212867D400348BE9 /* CharactersViewModel.swift */; };
 		B1DC9409212867E000348BE9 /* CharactersDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9408212867E000348BE9 /* CharactersDetailsViewModel.swift */; };
 		B1DC940B212867EB00348BE9 /* ComicDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940A212867EB00348BE9 /* ComicDetailsViewModel.swift */; };
+		B1DC940D2128692D00348BE9 /* MarvelAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */; };
 		D10D55BE4510B48B32FACB15 /* Pods_IlegraChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		B1DC9406212867D400348BE9 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		B1DC9408212867E000348BE9 /* CharactersDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewModel.swift; sourceTree = "<group>"; };
 		B1DC940A212867EB00348BE9 /* ComicDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailsViewModel.swift; sourceTree = "<group>"; };
+		B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIService.swift; sourceTree = "<group>"; };
 		B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		B1DC93FF2128675600348BE9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				B1DC9407212867D400348BE9 /* CharactersViewModel.swift in Sources */,
 				B1DC93F72128500B00348BE9 /* ComicCell.swift in Sources */,
 				B1DC940B212867EB00348BE9 /* ComicDetailsViewModel.swift in Sources */,
+				B1DC940D2128692D00348BE9 /* MarvelAPIService.swift in Sources */,
 				B1DC93EE21284F3E00348BE9 /* CharactersView.swift in Sources */,
 				B10F3DA42127749F00EF67BA /* AppDelegate.swift in Sources */,
 				B1DC9405212867AC00348BE9 /* Comic.swift in Sources */,
