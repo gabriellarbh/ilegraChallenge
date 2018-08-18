@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct Comic: Decodable {
+    let id: Int
+    let title: String
+    let issueNumber: Int
+    let description: String
+    let isbn: String
+}
+
+struct Item: Decodable {
+    let resourceURI: String
+    let name: String
+}
