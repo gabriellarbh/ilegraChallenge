@@ -6,8 +6,8 @@
 //  Copyright © 2018 gabi. All rights reserved.
 //
 
-import XCTest
 @testable import IlegraChallenge
+import XCTest
 
 class IlegraChallengeTests: XCTestCase {
     
@@ -21,10 +21,10 @@ class IlegraChallengeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+//    func testExample() {
+//        // This is an example of a functional test case.
+//        // Use XCTAssert and related functions to verify your tests produce the correct results.
+//    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

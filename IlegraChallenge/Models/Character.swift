@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// swiftlint:disable discouraged_optional_collection
 struct Character: Decodable {
     let id: Int
     let name: String
@@ -21,7 +21,7 @@ struct Character: Decodable {
     init?(_ dict: [String: Any]) {
         let decoder = JSONDecoder()
         if let data = try? JSONSerialization.data(withJSONObject: dict, options: []),
-            let character = try? decoder.decode(Character.self, from: data){
+            let character = try? decoder.decode(Character.self, from: data) {
             self.id = character.id
             self.name = character.name
             self.description = character.description
@@ -37,8 +37,7 @@ struct Character: Decodable {
                     }
                 }
             }
-        } else {
-            return nil
         }
+        return nil
     }
 }
