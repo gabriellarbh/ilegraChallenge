@@ -20,8 +20,6 @@
 		B136E7AF2129BEE70082E61A /* CharacterBlackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B136E7AD2129BEE70082E61A /* CharacterBlackCell.xib */; };
 		B136E7B22129C18E0082E61A /* CharacterCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7B12129C18E0082E61A /* CharacterCellProtocol.swift */; };
 		B1A5D7762129ACD00051FDE8 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */; };
-		B1B428872128DC2500679771 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B428852128DC2500679771 /* CharacterCell.swift */; };
-		B1B428882128DC2500679771 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B428862128DC2500679771 /* CharacterCell.xib */; };
 		B1B4288B2128DC8900679771 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B428892128DC8900679771 /* ComicCell.swift */; };
 		B1B4288C2128DC8900679771 /* ComicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B4288A2128DC8900679771 /* ComicCell.xib */; };
 		B1DC93E821283EBF00348BE9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */; };
@@ -84,8 +82,6 @@
 		B136E7B12129C18E0082E61A /* CharacterCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellProtocol.swift; sourceTree = "<group>"; };
 		B186C57B212887B100CF4E57 /* IlegraChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IlegraChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		B1B428852128DC2500679771 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
-		B1B428862128DC2500679771 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		B1B428892128DC8900679771 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
 		B1B4288A2128DC8900679771 /* ComicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCell.xib; sourceTree = "<group>"; };
 		B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -238,8 +234,6 @@
 		B1DC93F021284FA500348BE9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B1B428852128DC2500679771 /* CharacterCell.swift */,
-				B1B428862128DC2500679771 /* CharacterCell.xib */,
 				B1B428892128DC8900679771 /* ComicCell.swift */,
 				B1B4288A2128DC8900679771 /* ComicCell.xib */,
 				B136E7A82129B8840082E61A /* CharacterRedCell.swift */,
@@ -411,7 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */,
-				B1B428882128DC2500679771 /* CharacterCell.xib in Resources */,
 				B136E7AF2129BEE70082E61A /* CharacterBlackCell.xib in Resources */,
 				B1DC941521286DDF00348BE9 /* APIKeys.plist in Resources */,
 				B10F3DAB212774A100EF67BA /* Assets.xcassets in Resources */,
@@ -568,7 +561,6 @@
 				B1DC93E821283EBF00348BE9 /* AppCoordinator.swift in Sources */,
 				B1DC9409212867E000348BE9 /* CharactersDetailsViewModel.swift in Sources */,
 				B1DC93EA2128406700348BE9 /* BaseCoordinator.swift in Sources */,
-				B1B428872128DC2500679771 /* CharacterCell.swift in Sources */,
 				B1DC941221286CC700348BE9 /* CacheService.swift in Sources */,
 				B1A5D7762129ACD00051FDE8 /* UIImage+Extension.swift in Sources */,
 				B1DC93FD2128504E00348BE9 /* CharacterDetailsView.swift in Sources */,

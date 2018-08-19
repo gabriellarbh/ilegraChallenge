@@ -14,6 +14,7 @@ PODS:
   - RxSwift (4.2.0)
   - RxTest (4.2.0):
     - RxSwift (~> 4.0)
+  - UINavigationBar-Transparent (1.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -23,6 +24,7 @@ DEPENDENCIES:
   - RxOptional
   - RxSwift
   - RxTest
+  - UINavigationBar-Transparent
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -34,6 +36,7 @@ SPEC REPOS:
     - RxOptional
     - RxSwift
     - RxTest
+    - UINavigationBar-Transparent
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -44,7 +47,8 @@ SPEC CHECKSUMS:
   RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
+  UINavigationBar-Transparent: 7461a7dbff53a7b558985812d38bb054717de795
 
-PODFILE CHECKSUM: 312a656e8443253d9e9917ffee7810360c7e3912
+PODFILE CHECKSUM: 5d0edde7f0a2f258fdaf5746f1079aaaf752d8cc
 
 COCOAPODS: 1.5.3

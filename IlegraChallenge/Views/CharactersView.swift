@@ -10,7 +10,6 @@ import RxCocoa
 import RxDataSources
 import RxSwift
 import UIKit
-import UINavigationBar_Transparent
 
 struct SectionOfCharacterInfo: Equatable {
     
@@ -63,18 +62,6 @@ class CharactersView: UIViewController {
         return characterView
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        guard let navController = self.navigationController else {
-            return
-        }
-        
-        navController.navigationBar.setBarColor(UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.5))
-        navController.navigationBar.tintColor = .white
-        navController.navigationBar.titleTextAttributes = [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.white]
-        self.title = "Character List"
-        self.setNeedsStatusBarAppearanceUpdate()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,5 +94,6 @@ class CharactersView: UIViewController {
         tableView.rx.didScroll
             .bind(to: viewModel.didScroll)
             .disposed(by: disposeBag)
+        self.title = "Character List"
     }
 }

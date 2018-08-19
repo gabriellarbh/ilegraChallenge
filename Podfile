@@ -10,6 +10,7 @@ target 'IlegraChallenge' do
     pod 'RxCocoa'
     pod 'RxDataSources'
     pod 'RxOptional'
+    pod 'UINavigationBar-Transparent'
 
   # Pods for IlegraChallenge
   target 'IlegraChallengeTests' do
