@@ -14,14 +14,14 @@
 		B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */; };
 		B10F3DB9212774A100EF67BA /* IlegraChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DB8212774A100EF67BA /* IlegraChallengeTests.swift */; };
 		B10F3DC4212774A100EF67BA /* IlegraChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */; };
+		B1B428872128DC2500679771 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B428852128DC2500679771 /* CharacterCell.swift */; };
+		B1B428882128DC2500679771 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B428862128DC2500679771 /* CharacterCell.xib */; };
+		B1B4288B2128DC8900679771 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B428892128DC8900679771 /* ComicCell.swift */; };
+		B1B4288C2128DC8900679771 /* ComicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B4288A2128DC8900679771 /* ComicCell.xib */; };
 		B1DC93E821283EBF00348BE9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */; };
 		B1DC93EA2128406700348BE9 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93E92128406700348BE9 /* BaseCoordinator.swift */; };
 		B1DC93EE21284F3E00348BE9 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93EC21284F3E00348BE9 /* CharactersView.swift */; };
 		B1DC93EF21284F3E00348BE9 /* CharactersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DC93ED21284F3E00348BE9 /* CharactersView.xib */; };
-		B1DC93F321284FD800348BE9 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93F121284FD800348BE9 /* CharacterCell.swift */; };
-		B1DC93F421284FD800348BE9 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DC93F221284FD800348BE9 /* CharacterCell.xib */; };
-		B1DC93F72128500B00348BE9 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93F52128500B00348BE9 /* ComicCell.swift */; };
-		B1DC93F82128500B00348BE9 /* ComicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DC93F62128500B00348BE9 /* ComicCell.xib */; };
 		B1DC93FD2128504E00348BE9 /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93FB2128504E00348BE9 /* CharacterDetailsView.swift */; };
 		B1DC93FE2128504E00348BE9 /* CharacterDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DC93FC2128504E00348BE9 /* CharacterDetailsView.xib */; };
 		B1DC9403212867A000348BE9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9402212867A000348BE9 /* Character.swift */; };
@@ -72,14 +72,14 @@
 		B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraChallengeUITests.swift; sourceTree = "<group>"; };
 		B10F3DC5212774A100EF67BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B186C57B212887B100CF4E57 /* IlegraChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IlegraChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1B428852128DC2500679771 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		B1B428862128DC2500679771 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		B1B428892128DC8900679771 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
+		B1B4288A2128DC8900679771 /* ComicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCell.xib; sourceTree = "<group>"; };
 		B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B1DC93E92128406700348BE9 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		B1DC93EC21284F3E00348BE9 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
 		B1DC93ED21284F3E00348BE9 /* CharactersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersView.xib; sourceTree = "<group>"; };
-		B1DC93F121284FD800348BE9 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
-		B1DC93F221284FD800348BE9 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
-		B1DC93F52128500B00348BE9 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
-		B1DC93F62128500B00348BE9 /* ComicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCell.xib; sourceTree = "<group>"; };
 		B1DC93FB2128504E00348BE9 /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
 		B1DC93FC2128504E00348BE9 /* CharacterDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsView.xib; sourceTree = "<group>"; };
 		B1DC9402212867A000348BE9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -216,10 +216,10 @@
 		B1DC93F021284FA500348BE9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B1DC93F121284FD800348BE9 /* CharacterCell.swift */,
-				B1DC93F221284FD800348BE9 /* CharacterCell.xib */,
-				B1DC93F52128500B00348BE9 /* ComicCell.swift */,
-				B1DC93F62128500B00348BE9 /* ComicCell.xib */,
+				B1B428852128DC2500679771 /* CharacterCell.swift */,
+				B1B428862128DC2500679771 /* CharacterCell.xib */,
+				B1B428892128DC8900679771 /* ComicCell.swift */,
+				B1B4288A2128DC8900679771 /* ComicCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -384,13 +384,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1DC93F82128500B00348BE9 /* ComicCell.xib in Resources */,
 				B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */,
+				B1B428882128DC2500679771 /* CharacterCell.xib in Resources */,
 				B1DC941521286DDF00348BE9 /* APIKeys.plist in Resources */,
 				B10F3DAB212774A100EF67BA /* Assets.xcassets in Resources */,
+				B1B4288C2128DC8900679771 /* ComicCell.xib in Resources */,
 				B1DC93FE2128504E00348BE9 /* CharacterDetailsView.xib in Resources */,
 				B1DC93EF21284F3E00348BE9 /* CharactersView.xib in Resources */,
-				B1DC93F421284FD800348BE9 /* CharacterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +442,7 @@
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -450,6 +451,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,16 +533,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1DC93F321284FD800348BE9 /* CharacterCell.swift in Sources */,
 				B1DC93E821283EBF00348BE9 /* AppCoordinator.swift in Sources */,
 				B1DC9409212867E000348BE9 /* CharactersDetailsViewModel.swift in Sources */,
 				B1DC93EA2128406700348BE9 /* BaseCoordinator.swift in Sources */,
+				B1B428872128DC2500679771 /* CharacterCell.swift in Sources */,
 				B1DC941221286CC700348BE9 /* CacheService.swift in Sources */,
 				B1DC93FD2128504E00348BE9 /* CharacterDetailsView.swift in Sources */,
 				B1DC9407212867D400348BE9 /* CharactersViewModel.swift in Sources */,
-				B1DC93F72128500B00348BE9 /* ComicCell.swift in Sources */,
 				B1DC941021286B1200348BE9 /* Image.swift in Sources */,
 				B1DC940B212867EB00348BE9 /* ComicDetailsViewModel.swift in Sources */,
+				B1B4288B2128DC8900679771 /* ComicCell.swift in Sources */,
 				B1DC940D2128692D00348BE9 /* MarvelAPIService.swift in Sources */,
 				B1DC93EE21284F3E00348BE9 /* CharactersView.swift in Sources */,
 				B10F3DA42127749F00EF67BA /* AppDelegate.swift in Sources */,
