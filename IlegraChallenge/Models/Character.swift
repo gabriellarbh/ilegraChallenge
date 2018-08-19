@@ -7,15 +7,17 @@
 //
 
 import Foundation
+import RxSwift
+import UIKit
 // swiftlint:disable discouraged_optional_collection
-struct Character: Decodable {
-    let id: Int
-    let name: String
-    let description: String
-    let thumbnail: Image
+class Character: Decodable {
+    var id: Int
+    var name: String
+    var description: String
+    var thumbnail: Image
     
-    let appearsIn: [Comic]?
-    let items: [Item]?
+    var appearsIn: [Comic]?
+    var items: [Item]?
     
     // TODO: Find a better way to do this
     init?(_ dict: [String: Any]) {
@@ -26,18 +28,20 @@ struct Character: Decodable {
             self.name = character.name
             self.description = character.description
             self.thumbnail = character.thumbnail
-            
+            self.appearsIn = []
             if let comics = dict["comics"] as? [String: Any],
                 let items = comics["items"] as? [[String: Any]] {
                 self.items = items.compactMap { item in
                     if let name = item["name"] as? String, let resource = item["resourceURI"] as? String {
-                        return Item(resourceURI: resource, name: name)
+                        let trimmedResource = String(resource.dropFirst(7))
+                        return Item(resourceURI: trimmedResource, name: name)
                     } else {
                         return nil
                     }
                 }
             }
+        } else {
+            return nil
         }
-        return nil
     }
 }

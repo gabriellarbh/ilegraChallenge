@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharactersView" customModule="IlegraChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="R0u-XO-NG3" id="DKS-pj-Itq"/>
+                <outlet property="tableView" destination="QRr-gm-9PD" id="MEV-EX-PIt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,30 +22,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ere-VI-HPi">
-                    <rect key="frame" x="0.0" y="140" width="375" height="527"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cCv-jd-Ngr">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="R0u-XO-NG3">
                     <rect key="frame" x="0.0" y="84" width="375" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QRr-gm-9PD">
+                    <rect key="frame" x="0.0" y="140" width="375" height="527"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="R0u-XO-NG3" firstAttribute="leading" secondItem="Ere-VI-HPi" secondAttribute="leading" id="3Sa-VM-JvS"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ere-VI-HPi" secondAttribute="trailing" id="DtL-5E-j2R"/>
-                <constraint firstItem="Ere-VI-HPi" firstAttribute="top" secondItem="R0u-XO-NG3" secondAttribute="bottom" id="Err-HU-DFH"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ere-VI-HPi" secondAttribute="bottom" id="Qsk-rm-OIX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QRr-gm-9PD" secondAttribute="trailing" id="8vD-iT-Cdo"/>
+                <constraint firstItem="QRr-gm-9PD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DXA-9z-yZK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QRr-gm-9PD" secondAttribute="bottom" id="QOR-3g-MdA"/>
                 <constraint firstItem="R0u-XO-NG3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="RCN-7T-rWr"/>
-                <constraint firstItem="R0u-XO-NG3" firstAttribute="trailing" secondItem="Ere-VI-HPi" secondAttribute="trailing" id="WRY-vv-yXp"/>
-                <constraint firstItem="Ere-VI-HPi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="maO-ZA-JZO"/>
+                <constraint firstItem="R0u-XO-NG3" firstAttribute="trailing" secondItem="QRr-gm-9PD" secondAttribute="trailing" id="taZ-15-vcF"/>
+                <constraint firstItem="R0u-XO-NG3" firstAttribute="leading" secondItem="QRr-gm-9PD" secondAttribute="leading" id="zSe-ob-d7r"/>
+                <constraint firstItem="QRr-gm-9PD" firstAttribute="top" secondItem="R0u-XO-NG3" secondAttribute="bottom" id="zT7-Xs-e1N"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>

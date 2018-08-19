@@ -9,7 +9,12 @@
 import Alamofire
 import Foundation
 import RxCocoa
+import RxOptional
 import RxSwift
+
+enum RequestType {
+    case character, thumbnail(Image), comic, comicThumbnail
+}
 
 class MarvelAPIService {
     private let disposeBag = DisposeBag()
@@ -28,11 +33,18 @@ class MarvelAPIService {
     
     // Outputs
     private var characters = PublishSubject<[Character]>()
-    var character: Observable<[Character]> {
-        return characters.asObserver()
+    private var thumbnails = PublishSubject<(Data, Image)>()
+    private var charactersThumbnails = PublishSubject<(Character, Data)>()
+    
+    private var charactersJSON = PublishSubject<[[String: Any]]>()
+    
+    var characterLoaded: Observable<[Character]> {
+        return characters.asObservable()
     }
     
-    private var charactersJSON = BehaviorSubject<[[String: Any]]>(value: [])
+    var thumbnailLoaded: Observable<(Data, Image)> {
+        return thumbnails.asObservable()
+    }
 
     init?() {
         guard let path = Bundle.main.path(forResource: "APIKeys", ofType: "plist") else {
@@ -58,10 +70,12 @@ class MarvelAPIService {
             .map { $0.compactMap { Character($0) } }
             .bind(to: characters)
             .disposed(by: disposeBag)
-        
+
         characters
-            .subscribe(onNext: { character in
-                print(character)
+            .subscribe(onNext: { [unowned self] characters in
+                characters.forEach { char in
+                    self.requestThumbnail(char.thumbnail)
+                }
             })
             .disposed(by: disposeBag)
         
@@ -80,7 +94,7 @@ extension MarvelAPIService {
                 }
                 var finalParams = this.authParameters
                 finalParams.updateValue(offset, forKey: "offset")
-                guard let request = this.request(using: finalParams) else {
+                guard let request = this.request(type: .character, using: finalParams) else {
                         return
                 }
                 
@@ -98,20 +112,53 @@ extension MarvelAPIService {
                         let results = jsonData["results"] as? [[String: Any]] else {
                             return
                     }
-                    this.charactersJSON.onNext(results)
+                    let characters = results.compactMap { Character($0) }
+                    this.characters.onNext(characters)
+                    
                 }
                     .resume()
             })
             .disposed(by: disposeBag)
     }
     
-    private func request(using parameters: [String: Any]) -> URLRequest? {
+    private func requestThumbnail(_ image: Image) {
+        guard let request = request(type: .thumbnail(image), using: self.authParameters) else {
+            return
+        }
+        URLSession.shared
+            .dataTask(with: request) { data, _, error in
+                if let error = error {
+                    print(error)
+                }
+                if let data = data {
+                    self.thumbnails.onNext((data, image))
+                }
+            }
+            .resume()
+    }
+    
+    private func request(type: RequestType, using parameters: [String: Any]) -> URLRequest? {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
-        urlComponents.host = "gateway.marvel.com"
-        urlComponents.path = "/v1/public/characters"
+        
+        switch type {
+        case .character:
+            urlComponents.host = "gateway.marvel.com"
+            urlComponents.path = "/v1/public/characters"
+        case .thumbnail(let image):
+            let trimmedPath = String(image.path.dropFirst(19))
+            urlComponents.host = "i.annihil.us"
+            urlComponents.path = trimmedPath + "/standard_fantastic." + image.extension
+            urlComponents.scheme = "http"
+        case .comic:
+            urlComponents.host = "gateway.marvel.com"
+            urlComponents.path = "/v1/public/comics"
+        case .comicThumbnail:
+            fatalError("not implemented yet")
+        }
         
         urlComponents.queryItems = parameters.map { URLQueryItem(name: $0.key, value: "\($0.value)") }
+        
         guard let url = urlComponents.url else {
             print("Error creating request, url is nil")
             return nil
