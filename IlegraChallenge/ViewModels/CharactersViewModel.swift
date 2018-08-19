@@ -13,26 +13,39 @@ import RxSwift
 class CharactersViewModel {
     private let disposeBag = DisposeBag()
     private var coordinator: AppCoordinator!
-    
+    private var characters: [Character] = []
     // View input
     var charactersInfo = PublishSubject<[SectionOfCharacterInfo]>()
     
     var didSelectCharacter = PublishSubject<Int>()
+    var didScroll = PublishSubject<Void>()
     
     init(_ coordinator: AppCoordinator) {
         self.coordinator = coordinator
         CacheService.shared.characters
-            .map { $0.map { CharacterInfo(name: $0.name, image: $0.thumbnail, id: $0.id) } }
-            .map { [SectionOfCharacterInfo(items: $0)] }
-            .bind(to: charactersInfo)
+            .subscribe(onNext: { [unowned self] characters in
+                self.characters.append(contentsOf: characters)
+                let sections = [SectionOfCharacterInfo(items: self.characters.map { CharacterInfo(name: $0.name,
+                                                                                                  image: $0.thumbnail,
+                                                                                                  id: $0.id)
+                })]
+                self.charactersInfo.onNext(sections)
+            })
             .disposed(by: disposeBag)
         
         didSelectCharacter
-            .withLatestFrom(CacheService.shared.characters) { index, characters -> Character in
-                characters[index]
-            }
-            .bind(to: coordinator.didSelectCharacter)
+            .subscribe(onNext: { [unowned self] index in
+                guard index < self.characters.count else {
+                    return
+                }
+                let character = self.characters[index]
+                self.coordinator.didSelectCharacter.onNext(character)
+            })
             .disposed(by: disposeBag)
         
+        didScroll
+            .throttle(Double(3), latest: true, scheduler: MainScheduler.instance)
+            .bind(to: CacheService.shared.shouldLoadCharacters)
+            .disposed(by: disposeBag)
     }
 }
