@@ -15,8 +15,6 @@ class Character: Decodable {
     var name: String
     var description: String
     var thumbnail: Image
-    
-    var appearsIn: [Comic]?
     var items: [Item]?
     
     // TODO: Find a better way to do this
@@ -28,7 +26,6 @@ class Character: Decodable {
             self.name = character.name
             self.description = character.description
             self.thumbnail = character.thumbnail
-            self.appearsIn = []
             if let comics = dict["comics"] as? [String: Any],
                 let items = comics["items"] as? [[String: Any]] {
                 self.items = items.compactMap { item in
