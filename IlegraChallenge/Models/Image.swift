@@ -11,4 +11,8 @@ import Foundation
 struct Image: Decodable {
     let path: String
     let `extension`: String
+    
+    func toURL() -> String {
+        return "\(self.path)/standard_fantastic.\(self.extension)"
+    }
 }
