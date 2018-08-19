@@ -62,7 +62,6 @@ class CharactersView: UIViewController {
         return characterView
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CharacterRedCell", bundle: nil), forCellReuseIdentifier: "characterRedCell")

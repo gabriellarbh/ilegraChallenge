@@ -5,7 +5,6 @@
 //  Created by Gabriella Barbieri on 18/08/18.
 //  Copyright © 2018 gabi. All rights reserved.
 //
-
 import RxSwift
 
 class CharactersDetailViewModel {
@@ -24,6 +23,12 @@ class CharactersDetailViewModel {
 }
 
 extension CharactersDetailViewModel {
+    var comicsAppearance: Observable<[CharacterDetailsSection]> {
+        return characterSubject
+                    .map { $0.items?.compactMap { $0.name } }
+                    .filterNil()
+                    .map { [CharacterDetailsSection(items: $0)] }
+    }
     var characterName: Observable<String> {
         return characterSubject.map { $0.name }
     }
