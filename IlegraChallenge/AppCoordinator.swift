@@ -21,6 +21,7 @@ class AppCoordinator: BaseCoordinator<Void> {
         let viewModel = CharactersViewModel(self)
         let viewController = CharactersView.with(viewModel)
         let navController = UINavigationController(rootViewController: viewController)
+        navController.navigationBar.barStyle = .black
         window.rootViewController = navController
         window.makeKeyAndVisible()
         

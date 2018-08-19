@@ -10,6 +10,7 @@ import RxCocoa
 import RxDataSources
 import RxSwift
 import UIKit
+import UINavigationBar_Transparent
 
 struct SectionOfCharacterInfo: Equatable {
     
@@ -62,16 +63,35 @@ class CharactersView: UIViewController {
         return characterView
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let navController = self.navigationController else {
+            return
+        }
+        
+        navController.navigationBar.setBarColor(UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.5))
+        navController.navigationBar.tintColor = .white
+        navController.navigationBar.titleTextAttributes = [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.white]
+        self.title = "Character List"
+        self.setNeedsStatusBarAppearanceUpdate()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "CharacterCell", bundle: nil), forCellReuseIdentifier: "characterCell")
+        tableView.register(UINib(nibName: "CharacterRedCell", bundle: nil), forCellReuseIdentifier: "characterRedCell")
+        tableView.register(UINib(nibName: "CharacterBlackCell", bundle: nil), forCellReuseIdentifier: "characterBlackCell")
         
         let dataSource = RxTableViewSectionedReloadDataSource<SectionOfCharacterInfo>(configureCell: { _, table, indexPath, item in
-            if let cell = table.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as? CharacterCell {
+            let identifier = indexPath.row % 2 == 0 ? "characterRedCell" : "characterBlackCell"
+            if var cell = table.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? CharacterCellProtocol {
                 cell.info = item
-                return cell
+                guard let tableViewCell = cell as? UITableViewCell else {
+                    fatalError("CharacterCellProtocol is not being implemented by a UITableViewCell")
+                }
+                
+                return tableViewCell
             } else {
-                fatalError("Could not dequeue cell with identifier character cell")
+                fatalError("Could not dequeue cell with identifier \(identifier)")
             }
         })
         
