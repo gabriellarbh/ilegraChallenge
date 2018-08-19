@@ -8,7 +8,21 @@
 
 import UIKit
 
-class CharacterBlackCell: UITableViewCell {
+class CharacterBlackCell: UITableViewCell, CharacterCellProtocol {
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var characterImageView: UIImageView!
+    
+    var info: CharacterInfo? {
+        didSet {
+            guard let info = self.info else {
+                return
+            }
+            self.titleLabel.text = info.name
+            let url = "\(info.image.path)/standard_fantastic.\(info.image.extension)"
+            characterImageView.download(image: url)
+            self.clipsToBounds = true
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
