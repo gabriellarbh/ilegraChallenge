@@ -14,6 +14,11 @@
 		B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */; };
 		B10F3DB9212774A100EF67BA /* IlegraChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DB8212774A100EF67BA /* IlegraChallengeTests.swift */; };
 		B10F3DC4212774A100EF67BA /* IlegraChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */; };
+		B136E7AA2129B8840082E61A /* CharacterRedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7A82129B8840082E61A /* CharacterRedCell.swift */; };
+		B136E7AB2129B8840082E61A /* CharacterRedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B136E7A92129B8840082E61A /* CharacterRedCell.xib */; };
+		B136E7AE2129BEE70082E61A /* CharacterBlackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */; };
+		B136E7AF2129BEE70082E61A /* CharacterBlackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B136E7AD2129BEE70082E61A /* CharacterBlackCell.xib */; };
+		B136E7B22129C18E0082E61A /* CharacterCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7B12129C18E0082E61A /* CharacterCellProtocol.swift */; };
 		B1A5D7762129ACD00051FDE8 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */; };
 		B1B428872128DC2500679771 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B428852128DC2500679771 /* CharacterCell.swift */; };
 		B1B428882128DC2500679771 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B428862128DC2500679771 /* CharacterCell.xib */; };
@@ -72,6 +77,11 @@
 		B10F3DBF212774A100EF67BA /* IlegraChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlegraChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraChallengeUITests.swift; sourceTree = "<group>"; };
 		B10F3DC5212774A100EF67BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B136E7A82129B8840082E61A /* CharacterRedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRedCell.swift; sourceTree = "<group>"; };
+		B136E7A92129B8840082E61A /* CharacterRedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterRedCell.xib; sourceTree = "<group>"; };
+		B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBlackCell.swift; sourceTree = "<group>"; };
+		B136E7AD2129BEE70082E61A /* CharacterBlackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterBlackCell.xib; sourceTree = "<group>"; };
+		B136E7B12129C18E0082E61A /* CharacterCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellProtocol.swift; sourceTree = "<group>"; };
 		B186C57B212887B100CF4E57 /* IlegraChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IlegraChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		B1B428852128DC2500679771 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
@@ -164,6 +174,7 @@
 		B10F3DA22127749F00EF67BA /* IlegraChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B136E7B02129C1850082E61A /* Protocol */,
 				B186C578212885C700CF4E57 /* Utils */,
 				B1DC941321286DBE00348BE9 /* Resources */,
 				B1DC94012128678200348BE9 /* Models */,
@@ -196,6 +207,14 @@
 			path = IlegraChallengeUITests;
 			sourceTree = "<group>";
 		};
+		B136E7B02129C1850082E61A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B136E7B12129C18E0082E61A /* CharacterCellProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		B186C578212885C700CF4E57 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +242,10 @@
 				B1B428862128DC2500679771 /* CharacterCell.xib */,
 				B1B428892128DC8900679771 /* ComicCell.swift */,
 				B1B4288A2128DC8900679771 /* ComicCell.xib */,
+				B136E7A82129B8840082E61A /* CharacterRedCell.swift */,
+				B136E7A92129B8840082E61A /* CharacterRedCell.xib */,
+				B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */,
+				B136E7AD2129BEE70082E61A /* CharacterBlackCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -389,9 +412,11 @@
 			files = (
 				B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */,
 				B1B428882128DC2500679771 /* CharacterCell.xib in Resources */,
+				B136E7AF2129BEE70082E61A /* CharacterBlackCell.xib in Resources */,
 				B1DC941521286DDF00348BE9 /* APIKeys.plist in Resources */,
 				B10F3DAB212774A100EF67BA /* Assets.xcassets in Resources */,
 				B1B4288C2128DC8900679771 /* ComicCell.xib in Resources */,
+				B136E7AB2129B8840082E61A /* CharacterRedCell.xib in Resources */,
 				B1DC93FE2128504E00348BE9 /* CharacterDetailsView.xib in Resources */,
 				B1DC93EF21284F3E00348BE9 /* CharactersView.xib in Resources */,
 			);
@@ -448,6 +473,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/UINavigationBar-Transparent/UINavigationBar_Transparent.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -458,6 +484,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UINavigationBar_Transparent.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -554,6 +581,9 @@
 				B10F3DA42127749F00EF67BA /* AppDelegate.swift in Sources */,
 				B1DC9405212867AC00348BE9 /* Comic.swift in Sources */,
 				B1DC9403212867A000348BE9 /* Character.swift in Sources */,
+				B136E7AA2129B8840082E61A /* CharacterRedCell.swift in Sources */,
+				B136E7B22129C18E0082E61A /* CharacterCellProtocol.swift in Sources */,
+				B136E7AE2129BEE70082E61A /* CharacterBlackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
