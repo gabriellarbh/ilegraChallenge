@@ -17,20 +17,16 @@ class CharacterCell: UITableViewCell {
     
     var info: CharacterInfo? {
         didSet {
-            self.textLabel?.text = info?.name
+            guard let info = self.info else {
+                return
+            }
+            self.textLabel?.text = info.name
+            let url = "\(info.image.path)/standard_fantastic.\(info.image.extension)"
+            characterImageView.download(image: url)
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        CacheService.shared.thumbnails
-            .filter { $0.1.path == self.info?.image.path }
-            .subscribe(onNext: { data, _ in
-                DispatchQueue.main.async {
-                    self.characterImageView.image = UIImage(data: data)
-                }
-            })
-            .disposed(by: disposeBag)
     }
 }

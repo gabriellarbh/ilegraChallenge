@@ -14,6 +14,7 @@
 		B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */; };
 		B10F3DB9212774A100EF67BA /* IlegraChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DB8212774A100EF67BA /* IlegraChallengeTests.swift */; };
 		B10F3DC4212774A100EF67BA /* IlegraChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */; };
+		B1A5D7762129ACD00051FDE8 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */; };
 		B1B428872128DC2500679771 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B428852128DC2500679771 /* CharacterCell.swift */; };
 		B1B428882128DC2500679771 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B428862128DC2500679771 /* CharacterCell.xib */; };
 		B1B4288B2128DC8900679771 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B428892128DC8900679771 /* ComicCell.swift */; };
@@ -72,6 +73,7 @@
 		B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraChallengeUITests.swift; sourceTree = "<group>"; };
 		B10F3DC5212774A100EF67BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B186C57B212887B100CF4E57 /* IlegraChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IlegraChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		B1B428852128DC2500679771 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		B1B428862128DC2500679771 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		B1B428892128DC8900679771 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		B186C578212885C700CF4E57 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
@@ -449,6 +453,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
@@ -538,6 +543,7 @@
 				B1DC93EA2128406700348BE9 /* BaseCoordinator.swift in Sources */,
 				B1B428872128DC2500679771 /* CharacterCell.swift in Sources */,
 				B1DC941221286CC700348BE9 /* CacheService.swift in Sources */,
+				B1A5D7762129ACD00051FDE8 /* UIImage+Extension.swift in Sources */,
 				B1DC93FD2128504E00348BE9 /* CharacterDetailsView.swift in Sources */,
 				B1DC9407212867D400348BE9 /* CharactersViewModel.swift in Sources */,
 				B1DC941021286B1200348BE9 /* Image.swift in Sources */,

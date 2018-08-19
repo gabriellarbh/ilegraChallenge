@@ -71,13 +71,13 @@ class MarvelAPIService {
             .bind(to: characters)
             .disposed(by: disposeBag)
 
-        characters
-            .subscribe(onNext: { [unowned self] characters in
-                characters.forEach { char in
-                    self.requestThumbnail(char.thumbnail)
-                }
-            })
-            .disposed(by: disposeBag)
+//        characters
+//            .subscribe(onNext: { [unowned self] characters in
+//                characters.forEach { char in
+//                    self.requestThumbnail(char.thumbnail)
+//                }
+//            })
+//            .disposed(by: disposeBag)
         
         bindOffset()
     }
@@ -113,28 +113,12 @@ extension MarvelAPIService {
                             return
                     }
                     let characters = results.compactMap { Character($0) }
-                    this.characters.onNext(characters)
+                    self?.characters.onNext(characters)
                     
                 }
                     .resume()
             })
             .disposed(by: disposeBag)
-    }
-    
-    private func requestThumbnail(_ image: Image) {
-        guard let request = request(type: .thumbnail(image), using: self.authParameters) else {
-            return
-        }
-        URLSession.shared
-            .dataTask(with: request) { data, _, error in
-                if let error = error {
-                    print(error)
-                }
-                if let data = data {
-                    self.thumbnails.onNext((data, image))
-                }
-            }
-            .resume()
     }
     
     private func request(type: RequestType, using parameters: [String: Any]) -> URLRequest? {
