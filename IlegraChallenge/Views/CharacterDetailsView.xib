@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailsView" customModule="IlegraChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="characterDescription" destination="e37-ak-7du" id="HxS-1X-5Iq"/>
+                <outlet property="characterImage" destination="REQ-VL-Bbh" id="cbW-Un-OAQ"/>
+                <outlet property="characterTitle" destination="hDL-mh-0ld" id="3cN-Mg-L69"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,12 +29,33 @@
                         <constraint firstAttribute="height" constant="200" id="HuY-xV-xrn"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDL-mh-0ld">
+                    <rect key="frame" x="0.0" y="235" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e37-ak-7du">
+                    <rect key="frame" x="0.0" y="256" width="375" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="KBO-P5-krA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="REQ-VL-Bbh" secondAttribute="trailing" id="4fq-GD-zWq"/>
+                <constraint firstItem="e37-ak-7du" firstAttribute="top" secondItem="hDL-mh-0ld" secondAttribute="bottom" id="5Hr-Io-i5P"/>
+                <constraint firstItem="e37-ak-7du" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7uD-K3-5ea"/>
                 <constraint firstItem="REQ-VL-Bbh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JqK-sZ-lAq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e37-ak-7du" secondAttribute="trailing" id="OGT-Gt-1ul"/>
                 <constraint firstItem="REQ-VL-Bbh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Tq5-7x-lLn"/>
+                <constraint firstItem="hDL-mh-0ld" firstAttribute="top" secondItem="REQ-VL-Bbh" secondAttribute="bottom" constant="15" id="kgi-bP-zXc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hDL-mh-0ld" secondAttribute="trailing" id="wAC-fF-PVu"/>
+                <constraint firstItem="hDL-mh-0ld" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zaY-rq-SVd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

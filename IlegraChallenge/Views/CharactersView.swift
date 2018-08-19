@@ -52,7 +52,6 @@ extension SectionOfCharacterInfo: AnimatableSectionModelType {
 class CharactersView: UIViewController {
     private let disposeBag = DisposeBag()
     
-    @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
     
     private var viewModel: CharactersViewModel!
@@ -72,12 +71,11 @@ class CharactersView: UIViewController {
                 cell.info = item
                 return cell
             } else {
-                fatalError("cacete")
+                fatalError("Could not dequeue cell with identifier character cell")
             }
         })
         
         viewModel.charactersInfo
-            .debug()
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
         
@@ -86,7 +84,8 @@ class CharactersView: UIViewController {
             .bind(to: viewModel.didSelectCharacter)
             .disposed(by: disposeBag)
         
-        
-        tableView.reloadData()
+        tableView.rx.didScroll
+            .bind(to: viewModel.didScroll)
+            .disposed(by: disposeBag)
     }
 }
