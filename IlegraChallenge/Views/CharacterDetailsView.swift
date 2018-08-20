@@ -18,11 +18,11 @@ class CharacterDetailsView: UIViewController {
     
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var comicsTableView: UITableView!
-    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var descriptionTextView: UITextView!
     @IBOutlet private weak var nameLabel: UILabel!
     
     private var infoHeight: CGFloat {
-        return descriptionLabel.frame.height + nameLabel.frame.height
+        return descriptionTextView.frame.height + nameLabel.frame.height
     }
     
     static func with(_ viewModel: CharactersDetailViewModel) -> CharacterDetailsView {
@@ -51,7 +51,7 @@ class CharacterDetailsView: UIViewController {
 
         viewModel.characterDescription.errorOnEmpty()
             .asDriver(onErrorJustReturn: "N/A")
-            .drive(descriptionLabel.rx.text)
+            .drive(descriptionTextView.rx.text)
             .disposed(by: disposeBag)
         
         viewModel.imageURL

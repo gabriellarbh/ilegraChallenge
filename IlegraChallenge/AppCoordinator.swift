@@ -10,7 +10,8 @@ import RxSwift
 import UIKit
 import UINavigationBar_Transparent
 
-class AppCoordinator: BaseCoordinator<Void> {
+class AppCoordinator {
+    private let disposeBag = DisposeBag()
     private let window: UIWindow!
     var didSelectCharacter = PublishSubject<Character>()
     
@@ -18,7 +19,7 @@ class AppCoordinator: BaseCoordinator<Void> {
         self.window = window
     }
     
-    override func start() -> Observable<Void> {
+    func start() -> Observable<Void> {
         let viewModel = CharactersViewModel(self)
         let viewController = CharactersView.with(viewModel)
         let navController = UINavigationController(rootViewController: viewController)
