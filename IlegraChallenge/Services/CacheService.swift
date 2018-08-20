@@ -39,7 +39,6 @@ class CacheService {
         }
         
         apiService.characterLoaded.bind(to: loadedCharacter).disposed(by: disposeBag)
-        apiService.thumbnailLoaded.bind(to: loadedThumbnails).disposed(by: disposeBag)
         
         shouldLoadCharacters
             .map { [weak self] _ -> Int in
