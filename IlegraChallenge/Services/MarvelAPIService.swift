@@ -13,7 +13,7 @@ import RxOptional
 import RxSwift
 
 enum RequestType {
-    case character, thumbnail(Image), comic, comicThumbnail
+    case character, comic
 }
 
 class MarvelAPIService {
@@ -22,30 +22,20 @@ class MarvelAPIService {
     private var publicKey: String!
     private var privateKey: String!
     
-    private var baseURL: URL? {
-        return URL(string: "https://gateway.marvel.com/v1/public/characters")
-    }
-    
     // MARK: - RxSwift variables
-    
     // Inputs
     var offsetIndex = BehaviorSubject<Int>(value: 0)
     
     // Outputs
     private var characters = PublishSubject<[Character]>()
-    private var thumbnails = PublishSubject<(Data, Image)>()
-    private var charactersThumbnails = PublishSubject<(Character, Data)>()
     
     private var charactersJSON = PublishSubject<[[String: Any]]>()
+    private var responseJSON = PublishSubject<Data>()
     
     var characterLoaded: Observable<[Character]> {
         return characters.asObservable()
     }
     
-    var thumbnailLoaded: Observable<(Data, Image)> {
-        return thumbnails.asObservable()
-    }
-
     init?() {
         guard let path = Bundle.main.path(forResource: "APIKeys", ofType: "plist") else {
             // TODO: melhorar essa mensagem
@@ -66,18 +56,27 @@ class MarvelAPIService {
         self.publicKey = publicKey
         self.privateKey = privateKey
         
+        responseJSON
+            .map { jsonData -> [[String: Any]]? in
+                guard let json = try? JSONSerialization.jsonObject(with: jsonData, options: .allowFragments),
+                    let jsonDict = json as? [String: Any] else {
+                    return nil
+                }
+                
+                guard let jsonData = jsonDict["data"] as? [String: Any],
+                    let results = jsonData["results"] as? [[String: Any]] else {
+                        return nil
+                }
+                return results
+            }
+            .filterNil()
+            .bind(to: charactersJSON)
+            .disposed(by: disposeBag)
+        
         charactersJSON
             .map { $0.compactMap { Character($0) } }
             .bind(to: characters)
             .disposed(by: disposeBag)
-
-//        characters
-//            .subscribe(onNext: { [unowned self] characters in
-//                characters.forEach { char in
-//                    self.requestThumbnail(char.thumbnail)
-//                }
-//            })
-//            .disposed(by: disposeBag)
         
         bindOffset()
     }
@@ -99,22 +98,11 @@ extension MarvelAPIService {
                 }
                 
                 URLSession.shared.dataTask(with: request) { data, _, error in
-                    guard let data = data,
-                        let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
-                        let jsonDict = json as? [String: Any] else {
-                            if let error = error {
-                                print(error)
-                            }
-                            return
+                    if let data = data {
+                        self?.responseJSON.onNext(data)
+                    } else {
+                        print(error?.localizedDescription ?? "")
                     }
-                    
-                    guard let jsonData = jsonDict["data"] as? [String: Any],
-                        let results = jsonData["results"] as? [[String: Any]] else {
-                            return
-                    }
-                    let characters = results.compactMap { Character($0) }
-                    self?.characters.onNext(characters)
-                    
                 }
                     .resume()
             })
@@ -129,16 +117,9 @@ extension MarvelAPIService {
         case .character:
             urlComponents.host = "gateway.marvel.com"
             urlComponents.path = "/v1/public/characters"
-        case .thumbnail(let image):
-            let trimmedPath = String(image.path.dropFirst(19))
-            urlComponents.host = "i.annihil.us"
-            urlComponents.path = trimmedPath + "/standard_fantastic." + image.extension
-            urlComponents.scheme = "http"
         case .comic:
             urlComponents.host = "gateway.marvel.com"
             urlComponents.path = "/v1/public/comics"
-        case .comicThumbnail:
-            fatalError("not implemented yet")
         }
         
         urlComponents.queryItems = parameters.map { URLQueryItem(name: $0.key, value: "\($0.value)") }
@@ -159,7 +140,7 @@ extension MarvelAPIService {
     }
 }
 
-// MARK: - Parameters
+// MARK: - Parameters for authentication
 extension MarvelAPIService {
     
     private var authParameters: [String: Any] {
@@ -186,14 +167,6 @@ extension MarvelAPIService {
         return (0..<length).reduce("") {
             $0 + String(format: "%02x", digest[$1])
         }
-    }
-    
-    func serializeData(_ data: Data) -> [String: Any]? {
-        guard let resultJSON = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
-            let jsonDict = resultJSON as? [String: Any] else {
-                return nil
-        }
-        return jsonDict
     }
     
 }
