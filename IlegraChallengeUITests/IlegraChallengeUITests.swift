@@ -20,17 +20,34 @@ class IlegraChallengeUITests: XCTestCase {
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-    
+// swiftlint:disable line_length
+    func testCharacterSelection() {
+        let app = XCUIApplication()
+        sleep(10)
+        let tablesQuery = app.tables
+        let elementsQuery = app.scrollViews.otherElements
+        _ = elementsQuery.tables["Empty list"]
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["3-D Man"]/*[[".cells.staticTexts[\"3-D Man\"]",".staticTexts[\"3-D Man\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        sleep(4)
+        let nAStaticText = elementsQuery.staticTexts["N/A"]
+        nAStaticText.swipeUp()
+        sleep(4)
+        let tablesQuery2 = elementsQuery.tables
+        tablesQuery2/*@START_MENU_TOKEN@*/.staticTexts["Avengers: The Initiative (2007) #15"]/*[[".cells.staticTexts[\"Avengers: The Initiative (2007) #15\"]",".staticTexts[\"Avengers: The Initiative (2007) #15\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.
+            tap()
+        sleep(4)
+        nAStaticText.swipeUp()
+        sleep(4)
+        tablesQuery2/*@START_MENU_TOKEN@*/.staticTexts["Avengers: The Initiative (2007) #18"]/*[[".cells.staticTexts[\"Avengers: The Initiative (2007) #18\"]",".staticTexts[\"Avengers: The Initiative (2007) #18\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
+        sleep(4)
+        tablesQuery2/*@START_MENU_TOKEN@*/.staticTexts["Marvel Premiere (1972) #35"]/*[[".cells.staticTexts[\"Marvel Premiere (1972) #35\"]",".staticTexts[\"Marvel Premiere (1972) #35\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
+        sleep(4)
+    }
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-    }
-    
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
 }

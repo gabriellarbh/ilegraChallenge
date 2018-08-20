@@ -7,13 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048717E4665151541D4BFCEC /* Pods_IlegraChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */; };
+		9089094110633E98BD21749B /* Pods_IlegraChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211B93933961D37D7DF200C2 /* Pods_IlegraChallengeTests.framework */; };
 		B10F3DA42127749F00EF67BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DA32127749F00EF67BA /* AppDelegate.swift */; };
-		B10F3DA62127749F00EF67BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DA52127749F00EF67BA /* ViewController.swift */; };
-		B10F3DA92127749F00EF67BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DA72127749F00EF67BA /* Main.storyboard */; };
 		B10F3DAB212774A100EF67BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DAA212774A100EF67BA /* Assets.xcassets */; };
 		B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */; };
 		B10F3DB9212774A100EF67BA /* IlegraChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DB8212774A100EF67BA /* IlegraChallengeTests.swift */; };
 		B10F3DC4212774A100EF67BA /* IlegraChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */; };
+		B10F66E3212B71C700F690EA /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B10F66E2212B71C700F690EA /* APIKeys.plist */; };
+		B136E7AA2129B8840082E61A /* CharacterRedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7A82129B8840082E61A /* CharacterRedCell.swift */; };
+		B136E7AB2129B8840082E61A /* CharacterRedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B136E7A92129B8840082E61A /* CharacterRedCell.xib */; };
+		B136E7AE2129BEE70082E61A /* CharacterBlackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */; };
+		B136E7AF2129BEE70082E61A /* CharacterBlackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B136E7AD2129BEE70082E61A /* CharacterBlackCell.xib */; };
+		B136E7B22129C18E0082E61A /* CharacterCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7B12129C18E0082E61A /* CharacterCellProtocol.swift */; };
+		B136E7B42129F5920082E61A /* mock.JSON in Resources */ = {isa = PBXBuildFile; fileRef = B136E7B32129F5920082E61A /* mock.JSON */; };
+		B1A5D7762129ACD00051FDE8 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */; };
+		B1B4288B2128DC8900679771 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B428892128DC8900679771 /* ComicCell.swift */; };
+		B1B4288C2128DC8900679771 /* ComicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B4288A2128DC8900679771 /* ComicCell.xib */; };
+		B1DC93E821283EBF00348BE9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */; };
+		B1DC93EE21284F3E00348BE9 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93EC21284F3E00348BE9 /* CharactersView.swift */; };
+		B1DC93EF21284F3E00348BE9 /* CharactersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DC93ED21284F3E00348BE9 /* CharactersView.xib */; };
+		B1DC93FD2128504E00348BE9 /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC93FB2128504E00348BE9 /* CharacterDetailsView.swift */; };
+		B1DC93FE2128504E00348BE9 /* CharacterDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DC93FC2128504E00348BE9 /* CharacterDetailsView.xib */; };
+		B1DC9403212867A000348BE9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9402212867A000348BE9 /* Character.swift */; };
+		B1DC9405212867AC00348BE9 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9404212867AC00348BE9 /* Comic.swift */; };
+		B1DC9407212867D400348BE9 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9406212867D400348BE9 /* CharactersViewModel.swift */; };
+		B1DC9409212867E000348BE9 /* CharactersDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9408212867E000348BE9 /* CharactersDetailsViewModel.swift */; };
+		B1DC940D2128692D00348BE9 /* MarvelAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */; };
+		B1DC941021286B1200348BE9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940F21286B1200348BE9 /* Image.swift */; };
+		B1DC941221286CC700348BE9 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC941121286CC700348BE9 /* CacheService.swift */; };
+		D10D55BE4510B48B32FACB15 /* Pods_IlegraChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +57,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06F10A4AAA30442DB44D7F5B /* Pods-IlegraChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallengeTests/Pods-IlegraChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BDEB1DB75570E5CDF880043 /* Pods-IlegraChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallengeTests/Pods-IlegraChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		211B93933961D37D7DF200C2 /* Pods_IlegraChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D57064AAE195C2C4CE45993 /* Pods-IlegraChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		69C0EF59C1F4656B6BD53CB1 /* Pods-IlegraChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallengeUITests/Pods-IlegraChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C4AC83CF7969A3A82A0EEC5 /* Pods-IlegraChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallengeUITests/Pods-IlegraChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B10F3DA02127749F00EF67BA /* IlegraChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IlegraChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F3DA32127749F00EF67BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B10F3DA52127749F00EF67BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B10F3DA82127749F00EF67BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B10F3DAA212774A100EF67BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B10F3DAD212774A100EF67BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B10F3DAF212774A100EF67BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +74,32 @@
 		B10F3DBF212774A100EF67BA /* IlegraChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlegraChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraChallengeUITests.swift; sourceTree = "<group>"; };
 		B10F3DC5212774A100EF67BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10F66E2212B71C700F690EA /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = APIKeys.plist; path = ../APIKeys.plist; sourceTree = "<group>"; };
+		B136E7A82129B8840082E61A /* CharacterRedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRedCell.swift; sourceTree = "<group>"; };
+		B136E7A92129B8840082E61A /* CharacterRedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterRedCell.xib; sourceTree = "<group>"; };
+		B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBlackCell.swift; sourceTree = "<group>"; };
+		B136E7AD2129BEE70082E61A /* CharacterBlackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterBlackCell.xib; sourceTree = "<group>"; };
+		B136E7B12129C18E0082E61A /* CharacterCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellProtocol.swift; sourceTree = "<group>"; };
+		B136E7B32129F5920082E61A /* mock.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock.JSON; sourceTree = "<group>"; };
+		B186C57B212887B100CF4E57 /* IlegraChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IlegraChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		B1B428892128DC8900679771 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
+		B1B4288A2128DC8900679771 /* ComicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCell.xib; sourceTree = "<group>"; };
+		B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B1DC93EC21284F3E00348BE9 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		B1DC93ED21284F3E00348BE9 /* CharactersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersView.xib; sourceTree = "<group>"; };
+		B1DC93FB2128504E00348BE9 /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
+		B1DC93FC2128504E00348BE9 /* CharacterDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsView.xib; sourceTree = "<group>"; };
+		B1DC9402212867A000348BE9 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		B1DC9404212867AC00348BE9 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		B1DC9406212867D400348BE9 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		B1DC9408212867E000348BE9 /* CharactersDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewModel.swift; sourceTree = "<group>"; };
+		B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIService.swift; sourceTree = "<group>"; };
+		B1DC940F21286B1200348BE9 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B1DC941121286CC700348BE9 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10D55BE4510B48B32FACB15 /* Pods_IlegraChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9089094110633E98BD21749B /* Pods_IlegraChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +123,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048717E4665151541D4BFCEC /* Pods_IlegraChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D9FBFC22420CE76967D0FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */,
+				5D57064AAE195C2C4CE45993 /* Pods-IlegraChallenge.release.xcconfig */,
+				06F10A4AAA30442DB44D7F5B /* Pods-IlegraChallengeTests.debug.xcconfig */,
+				0BDEB1DB75570E5CDF880043 /* Pods-IlegraChallengeTests.release.xcconfig */,
+				69C0EF59C1F4656B6BD53CB1 /* Pods-IlegraChallengeUITests.debug.xcconfig */,
+				8C4AC83CF7969A3A82A0EEC5 /* Pods-IlegraChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B10F3D972127749F00EF67BA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +150,8 @@
 				B10F3DB7212774A100EF67BA /* IlegraChallengeTests */,
 				B10F3DC2212774A100EF67BA /* IlegraChallengeUITests */,
 				B10F3DA12127749F00EF67BA /* Products */,
+				00D9FBFC22420CE76967D0FE /* Pods */,
+				D550C843742DF7AC6E0DC064 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +168,16 @@
 		B10F3DA22127749F00EF67BA /* IlegraChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B136E7B02129C1850082E61A /* Protocol */,
+				B186C578212885C700CF4E57 /* Utils */,
+				B1DC941321286DBE00348BE9 /* Resources */,
+				B1DC94012128678200348BE9 /* Models */,
+				B1DC94002128676100348BE9 /* ViewModels */,
+				B1DC93FF2128675600348BE9 /* Services */,
+				B1DC93EB21284F2800348BE9 /* Views */,
 				B10F3DA32127749F00EF67BA /* AppDelegate.swift */,
-				B10F3DA52127749F00EF67BA /* ViewController.swift */,
-				B10F3DA72127749F00EF67BA /* Main.storyboard */,
-				B10F3DAA212774A100EF67BA /* Assets.xcassets */,
-				B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */,
-				B10F3DAF212774A100EF67BA /* Info.plist */,
+				B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */,
+				B186C57B212887B100CF4E57 /* IlegraChallenge-Bridging-Header.h */,
 			);
 			path = IlegraChallenge;
 			sourceTree = "<group>";
@@ -125,6 +200,97 @@
 			path = IlegraChallengeUITests;
 			sourceTree = "<group>";
 		};
+		B136E7B02129C1850082E61A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B136E7B12129C18E0082E61A /* CharacterCellProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B186C578212885C700CF4E57 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1A5D7752129ACD00051FDE8 /* UIImage+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B1DC93EB21284F2800348BE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC93F021284FA500348BE9 /* Cell */,
+				B1DC93EC21284F3E00348BE9 /* CharactersView.swift */,
+				B1DC93ED21284F3E00348BE9 /* CharactersView.xib */,
+				B1DC93FB2128504E00348BE9 /* CharacterDetailsView.swift */,
+				B1DC93FC2128504E00348BE9 /* CharacterDetailsView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1DC93F021284FA500348BE9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B1B428892128DC8900679771 /* ComicCell.swift */,
+				B1B4288A2128DC8900679771 /* ComicCell.xib */,
+				B136E7A82129B8840082E61A /* CharacterRedCell.swift */,
+				B136E7A92129B8840082E61A /* CharacterRedCell.xib */,
+				B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */,
+				B136E7AD2129BEE70082E61A /* CharacterBlackCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B1DC93FF2128675600348BE9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */,
+				B1DC941121286CC700348BE9 /* CacheService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B1DC94002128676100348BE9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC9406212867D400348BE9 /* CharactersViewModel.swift */,
+				B1DC9408212867E000348BE9 /* CharactersDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B1DC94012128678200348BE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC9402212867A000348BE9 /* Character.swift */,
+				B1DC9404212867AC00348BE9 /* Comic.swift */,
+				B1DC940F21286B1200348BE9 /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1DC941321286DBE00348BE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B10F66E2212B71C700F690EA /* APIKeys.plist */,
+				B10F3DAA212774A100EF67BA /* Assets.xcassets */,
+				B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */,
+				B10F3DAF212774A100EF67BA /* Info.plist */,
+				B136E7B32129F5920082E61A /* mock.JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D550C843742DF7AC6E0DC064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */,
+				211B93933961D37D7DF200C2 /* Pods_IlegraChallengeTests.framework */,
+				B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B10F3DC8212774A100EF67BA /* Build configuration list for PBXNativeTarget "IlegraChallenge" */;
 			buildPhases = (
+				4D544545D62A75C1F4C72D2B /* [CP] Check Pods Manifest.lock */,
 				B10F3D9C2127749F00EF67BA /* Sources */,
 				B10F3D9D2127749F00EF67BA /* Frameworks */,
 				B10F3D9E2127749F00EF67BA /* Resources */,
+				402C467FC0E6FAB8FD17E601 /* [CP] Embed Pods Frameworks */,
+				B1DC940E2128697D00348BE9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,9 +318,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B10F3DCB212774A100EF67BA /* Build configuration list for PBXNativeTarget "IlegraChallengeTests" */;
 			buildPhases = (
+				999E248BA6EAFE8617B643D6 /* [CP] Check Pods Manifest.lock */,
 				B10F3DB0212774A100EF67BA /* Sources */,
 				B10F3DB1212774A100EF67BA /* Frameworks */,
 				B10F3DB2212774A100EF67BA /* Resources */,
+				38D4DCF8D7212804FB95FD98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B10F3DCE212774A100EF67BA /* Build configuration list for PBXNativeTarget "IlegraChallengeUITests" */;
 			buildPhases = (
+				9F81D341710E01B3E9733558 /* [CP] Check Pods Manifest.lock */,
 				B10F3DBB212774A100EF67BA /* Sources */,
 				B10F3DBC212774A100EF67BA /* Frameworks */,
 				B10F3DBD212774A100EF67BA /* Resources */,
@@ -230,8 +402,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */,
+				B10F66E3212B71C700F690EA /* APIKeys.plist in Resources */,
+				B136E7AF2129BEE70082E61A /* CharacterBlackCell.xib in Resources */,
+				B136E7B42129F5920082E61A /* mock.JSON in Resources */,
 				B10F3DAB212774A100EF67BA /* Assets.xcassets in Resources */,
-				B10F3DA92127749F00EF67BA /* Main.storyboard in Resources */,
+				B1B4288C2128DC8900679771 /* ComicCell.xib in Resources */,
+				B136E7AB2129B8840082E61A /* CharacterRedCell.xib in Resources */,
+				B1DC93FE2128504E00348BE9 /* CharacterDetailsView.xib in Resources */,
+				B1DC93EF21284F3E00348BE9 /* CharactersView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +429,149 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38D4DCF8D7212804FB95FD98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallengeTests/Pods-IlegraChallengeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallengeTests/Pods-IlegraChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		402C467FC0E6FAB8FD17E601 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/UINavigationBar-Transparent/UINavigationBar_Transparent.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UINavigationBar_Transparent.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D544545D62A75C1F4C72D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlegraChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		999E248BA6EAFE8617B643D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlegraChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F81D341710E01B3E9733558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlegraChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1DC940E2128697D00348BE9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B10F3D9C2127749F00EF67BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10F3DA62127749F00EF67BA /* ViewController.swift in Sources */,
+				B1DC93E821283EBF00348BE9 /* AppCoordinator.swift in Sources */,
+				B1DC9409212867E000348BE9 /* CharactersDetailsViewModel.swift in Sources */,
+				B1DC941221286CC700348BE9 /* CacheService.swift in Sources */,
+				B1A5D7762129ACD00051FDE8 /* UIImage+Extension.swift in Sources */,
+				B1DC93FD2128504E00348BE9 /* CharacterDetailsView.swift in Sources */,
+				B1DC9407212867D400348BE9 /* CharactersViewModel.swift in Sources */,
+				B1DC941021286B1200348BE9 /* Image.swift in Sources */,
+				B1B4288B2128DC8900679771 /* ComicCell.swift in Sources */,
+				B1DC940D2128692D00348BE9 /* MarvelAPIService.swift in Sources */,
+				B1DC93EE21284F3E00348BE9 /* CharactersView.swift in Sources */,
 				B10F3DA42127749F00EF67BA /* AppDelegate.swift in Sources */,
+				B1DC9405212867AC00348BE9 /* Comic.swift in Sources */,
+				B1DC9403212867A000348BE9 /* Character.swift in Sources */,
+				B136E7AA2129B8840082E61A /* CharacterRedCell.swift in Sources */,
+				B136E7B22129C18E0082E61A /* CharacterCellProtocol.swift in Sources */,
+				B136E7AE2129BEE70082E61A /* CharacterBlackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +607,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B10F3DA72127749F00EF67BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B10F3DA82127749F00EF67BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,7 +669,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -428,17 +734,20 @@
 		};
 		B10F3DC9212774A100EF67BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XY32JCK42C;
-				INFOPLIST_FILE = IlegraChallenge/Info.plist;
+				INFOPLIST_FILE = IlegraChallenge/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabi.IlegraChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,17 +755,20 @@
 		};
 		B10F3DCA212774A100EF67BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D57064AAE195C2C4CE45993 /* Pods-IlegraChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XY32JCK42C;
-				INFOPLIST_FILE = IlegraChallenge/Info.plist;
+				INFOPLIST_FILE = IlegraChallenge/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabi.IlegraChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +776,7 @@
 		};
 		B10F3DCC212774A100EF67BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F10A4AAA30442DB44D7F5B /* Pods-IlegraChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +798,7 @@
 		};
 		B10F3DCD212774A100EF67BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDEB1DB75570E5CDF880043 /* Pods-IlegraChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +820,7 @@
 		};
 		B10F3DCF212774A100EF67BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C0EF59C1F4656B6BD53CB1 /* Pods-IlegraChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +841,7 @@
 		};
 		B10F3DD0212774A100EF67BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4AC83CF7969A3A82A0EEC5 /* Pods-IlegraChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
