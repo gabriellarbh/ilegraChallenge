@@ -14,6 +14,7 @@
 		B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */; };
 		B10F3DB9212774A100EF67BA /* IlegraChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DB8212774A100EF67BA /* IlegraChallengeTests.swift */; };
 		B10F3DC4212774A100EF67BA /* IlegraChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */; };
+		B10F66E3212B71C700F690EA /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B10F66E2212B71C700F690EA /* APIKeys.plist */; };
 		B136E7AA2129B8840082E61A /* CharacterRedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7A82129B8840082E61A /* CharacterRedCell.swift */; };
 		B136E7AB2129B8840082E61A /* CharacterRedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B136E7A92129B8840082E61A /* CharacterRedCell.xib */; };
 		B136E7AE2129BEE70082E61A /* CharacterBlackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */; };
@@ -74,6 +75,7 @@
 		B10F3DBF212774A100EF67BA /* IlegraChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlegraChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraChallengeUITests.swift; sourceTree = "<group>"; };
 		B10F3DC5212774A100EF67BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10F66E2212B71C700F690EA /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		B136E7A82129B8840082E61A /* CharacterRedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRedCell.swift; sourceTree = "<group>"; };
 		B136E7A92129B8840082E61A /* CharacterRedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterRedCell.xib; sourceTree = "<group>"; };
 		B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBlackCell.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				B10F3DA32127749F00EF67BA /* AppDelegate.swift */,
 				B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */,
 				B186C57B212887B100CF4E57 /* IlegraChallenge-Bridging-Header.h */,
+				B10F66E2212B71C700F690EA /* APIKeys.plist */,
 			);
 			path = IlegraChallenge;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10F3DAE212774A100EF67BA /* LaunchScreen.storyboard in Resources */,
+				B10F66E3212B71C700F690EA /* APIKeys.plist in Resources */,
 				B136E7AF2129BEE70082E61A /* CharacterBlackCell.xib in Resources */,
 				B136E7B42129F5920082E61A /* mock.JSON in Resources */,
 				B1DC941521286DDF00348BE9 /* APIKeys.plist in Resources */,
@@ -669,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -723,7 +727,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -740,7 +744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XY32JCK42C;
 				INFOPLIST_FILE = IlegraChallenge/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -761,7 +765,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XY32JCK42C;
 				INFOPLIST_FILE = IlegraChallenge/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,7 +8,6 @@
 
 @testable import IlegraChallenge
 import RxSwift
-import RxTest
 import XCTest
 
 class IlegraChallengeTests: XCTestCase {
@@ -21,9 +20,7 @@ class IlegraChallengeTests: XCTestCase {
         guard let service = service else {
             return
         }
-        
         characterObservable = service.characterLoaded
-        
     }
     
     override func tearDown() {
@@ -46,8 +43,6 @@ class IlegraChallengeTests: XCTestCase {
         
         offsetObs.onNext(0)
     }
-    
-    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
