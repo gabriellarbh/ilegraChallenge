@@ -36,7 +36,6 @@
 		B1DC940D2128692D00348BE9 /* MarvelAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */; };
 		B1DC941021286B1200348BE9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC940F21286B1200348BE9 /* Image.swift */; };
 		B1DC941221286CC700348BE9 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC941121286CC700348BE9 /* CacheService.swift */; };
-		B1DC941521286DDF00348BE9 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1DC941421286DDF00348BE9 /* APIKeys.plist */; };
 		D10D55BE4510B48B32FACB15 /* Pods_IlegraChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,7 @@
 		B10F3DBF212774A100EF67BA /* IlegraChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlegraChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F3DC3212774A100EF67BA /* IlegraChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraChallengeUITests.swift; sourceTree = "<group>"; };
 		B10F3DC5212774A100EF67BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B10F66E2212B71C700F690EA /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
+		B10F66E2212B71C700F690EA /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = APIKeys.plist; path = ../APIKeys.plist; sourceTree = "<group>"; };
 		B136E7A82129B8840082E61A /* CharacterRedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRedCell.swift; sourceTree = "<group>"; };
 		B136E7A92129B8840082E61A /* CharacterRedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterRedCell.xib; sourceTree = "<group>"; };
 		B136E7AC2129BEE70082E61A /* CharacterBlackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBlackCell.swift; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 		B1DC940C2128692D00348BE9 /* MarvelAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIService.swift; sourceTree = "<group>"; };
 		B1DC940F21286B1200348BE9 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		B1DC941121286CC700348BE9 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
-		B1DC941421286DDF00348BE9 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		B2324EF305B935A22AD682B2 /* Pods_IlegraChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62862A6A7907561970D064A /* Pods_IlegraChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA11994BF7C66B24AD910B2 /* Pods-IlegraChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 				B10F3DA32127749F00EF67BA /* AppDelegate.swift */,
 				B1DC93E721283EBF00348BE9 /* AppCoordinator.swift */,
 				B186C57B212887B100CF4E57 /* IlegraChallenge-Bridging-Header.h */,
-				B10F66E2212B71C700F690EA /* APIKeys.plist */,
 			);
 			path = IlegraChallenge;
 			sourceTree = "<group>";
@@ -275,10 +272,10 @@
 		B1DC941321286DBE00348BE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B10F66E2212B71C700F690EA /* APIKeys.plist */,
 				B10F3DAA212774A100EF67BA /* Assets.xcassets */,
 				B10F3DAC212774A100EF67BA /* LaunchScreen.storyboard */,
 				B10F3DAF212774A100EF67BA /* Info.plist */,
-				B1DC941421286DDF00348BE9 /* APIKeys.plist */,
 				B136E7B32129F5920082E61A /* mock.JSON */,
 			);
 			path = Resources;
@@ -408,7 +405,6 @@
 				B10F66E3212B71C700F690EA /* APIKeys.plist in Resources */,
 				B136E7AF2129BEE70082E61A /* CharacterBlackCell.xib in Resources */,
 				B136E7B42129F5920082E61A /* mock.JSON in Resources */,
-				B1DC941521286DDF00348BE9 /* APIKeys.plist in Resources */,
 				B10F3DAB212774A100EF67BA /* Assets.xcassets in Resources */,
 				B1B4288C2128DC8900679771 /* ComicCell.xib in Resources */,
 				B136E7AB2129B8840082E61A /* CharacterRedCell.xib in Resources */,
