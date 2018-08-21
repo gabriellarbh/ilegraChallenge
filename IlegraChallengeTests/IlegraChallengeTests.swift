@@ -14,13 +14,22 @@ class IlegraChallengeTests: XCTestCase {
     private let service = MarvelAPIService()
     private let disposeBag = DisposeBag()
     private var characterObservable: Observable<[IlegraChallenge.Character]>!
-    
+    private var data: Data!
     override func setUp() {
         super.setUp()
         guard let service = service else {
             return
         }
         characterObservable = service.characterLoaded
+
+        guard let path = Bundle.main.path(forResource: "mock", ofType: "JSON") else {
+            return
+        }
+
+        guard let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) else {
+            return
+        }
+        self.data = data
     }
     
     override func tearDown() {
@@ -42,6 +51,21 @@ class IlegraChallengeTests: XCTestCase {
             .disposed(by: disposeBag)
         
         offsetObs.onNext(0)
+    }
+
+    func testCharacterParsing() {
+        guard let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else {
+            XCTAssert(false, "data is not json")
+            return
+        }
+
+        guard let jsondict = json as? [String: Any] else {
+            XCTAssert(false, "JSON is not dictionary")
+            return
+        }
+
+        let character = IlegraChallenge.Character(jsondict)
+        XCTAssertNotNil(character, "Character is nil from valid JSON")
     }
     
     func testPerformanceExample() {
