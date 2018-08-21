@@ -16,8 +16,7 @@ class Character: Decodable {
     var description: String
     var thumbnail: Image
     var items: [Item]?
-    
-    // TODO: Find a better way to do this
+
     init?(_ dict: [String: Any]) {
         let decoder = JSONDecoder()
         if let data = try? JSONSerialization.data(withJSONObject: dict, options: []),
